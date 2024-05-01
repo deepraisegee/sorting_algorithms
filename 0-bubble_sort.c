@@ -1,7 +1,6 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 #include "sort.h"
-
 
 /**
   * bubble_sort - sorts an array of integers in ascending
@@ -18,12 +17,14 @@ void bubble_sort(int *array, size_t size)
 	for (i = 0; i < size; i++)
 	{
 		if (array[i] > array[i + 1])
-		/**im thinking, instead of swap, why not: 
-		create a temp variable and assign it the
-		value of i: temp = array[i];
-		array[i] = array[i + 1]
-		array [i + 1] = temp
-		swap(&array[i], &array[i + 1]);**/
+		/**
+		 * im thinking, instead of swap, why not:
+		 * create a temp variable and assign it the
+		 * value of i: temp = array[i];
+		 * array[i] = array[i + 1]
+		 * array [i + 1] = temp
+		 * swap(&array[i], &array[i + 1]);
+		 */
 		temp = array[i];
 		array[i] = array[i + 1];
 		array[i + 1] = temp;
