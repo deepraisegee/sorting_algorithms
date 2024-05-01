@@ -13,12 +13,20 @@
   */
 void bubble_sort(int *array, size_t size)
 {
-	size_t i;
+	size_t i, temp;
 
 	for (i = 0; i < size; i++)
 	{
 		if (array[i] > array[i + 1])
-			swap(&array[i], &array[i + 1]);
+		/**im thinking, instead of swap, why not: 
+		create a temp variable and assign it the
+		value of i: temp = array[i];
+		array[i] = array[i + 1]
+		array [i + 1] = temp
+		swap(&array[i], &array[i + 1]);**/
+		temp = array[i];
+		array[i] = array[i + 1];
+		array[i + 1] = temp;
 	}
 	print_array(array, size);
 }
