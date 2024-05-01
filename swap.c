@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 /**
   * swap - swap two given data
   * @a: pointer to a
@@ -7,11 +5,12 @@
   *
   * Return: void
   */
-void swap(int *a, int *b)
+void swap(int *a, int *b) 
 {
 	int tmp;
 
-	tmp = *a;
-	*a = *b;
+	tmp = *a; 
+	*a = *b; 
 	*b = tmp;
 }
+
