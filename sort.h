@@ -17,11 +17,7 @@ typedef struct listint_s
 } listint_t;
 
 void swap(int *a, int *b);
-<<<<<<< HEAD
-
-=======
 void bubble_sort(int *array, size_t size);
->>>>>>> 6b255cba7b9aab30ec5733d163378aceb1c43c3b
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 
