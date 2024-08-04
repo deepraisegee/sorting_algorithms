@@ -3,12 +3,11 @@
 #include "sort.h"
 
 /**
-  * bubble_sort - sorts an array of integers in ascending order using the Bubble sort algorithm
+  * bubble_sort - sorts an array of integers in
+  * ascending order using the Bubble sort algorithm
   *
-  * swap - switchs 2 integers in an array
-  *
-  * @array pointer to the arrayt
-  * @size size of the array
+  * @array: pointer to the arrayt
+  * @size: size of the array
   * @*a pointer to the first integer to swap
   * @*b pointer to the second integer
   *
@@ -25,7 +24,7 @@ void bubble_sort(int *array, size_t size)
 
 	for (i = 0; i < size; i++)
 	{
-		for (j = 0; j < size - i -1; j++)
+		for (j = 0; j < size - i - 1; j++)
 		{
 			if (array[j] > array[j + 1])
 			{
